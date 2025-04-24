@@ -1,0 +1,47 @@
+answer_1 = "Yes - definitely"
+answer_2 = "It is decidedly so"
+answer_3 = "Without a doubt"
+answer_4 = "Reply hazy, try again"
+answer_5 = "Ask again later"
+answer_6 = "Better not tell you now"
+answer_7 = "My sources say no"
+answer_8 = "Outlook not so good"
+answer_9 = "Very doubtful"
+answer_10 = "Signs point to yes"
+answer_11 = "The stars are unclear"
+answer_12 = "Just... no"
+
+# For when input is supported use the below code:
+#name = input("What is your name? ")
+#question = input("What is your question? ")
+
+name ="Ashley"
+question ="Will I have a great day today?"
+if name == "" :
+  if question == "":
+    print("Sorry, I'm not a mind reader! Please ask your question.")
+  else :
+      print(f"Question: {question}")
+else :
+  if question == "":
+    print("I'm excited to give you the answer you seek {name}, please ask your question")
+  else :
+    print(f"{name} asks: {question}")
+
+
+import random
+rand = random.randint(1,12)
+
+match rand:
+  case  1: print("Magic 8-ball's answer: ",answer_1)
+  case  2: print("Magic 8-ball's answer: ",answer_2)
+  case  3: print("Magic 8-ball's answer: ",answer_3)
+  case  4: print("Magic 8-ball's answer: ",answer_4)
+  case  5: print("Magic 8-ball's answer: ",answer_5)
+  case  6: print("Magic 8-ball's answer: ",answer_6)
+  case  7: print("Magic 8-ball's answer: ",answer_7)
+  case  8: print("Magic 8-ball's answer: ",answer_8)
+  case  9: print("Magic 8-ball's answer: ",answer_9)
+  case 10: print("Magic 8-ball's answer: ",answer_10)
+  case 11: print("Magic 8-ball's answer: ",answer_11)
+  case 12: print("Magic 8-ball's answer: ",answer_12)
